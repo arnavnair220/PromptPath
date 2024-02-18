@@ -9,15 +9,13 @@ from helpers import *
 def main():
   
   if (len(sys.argv) != 3):
-    print("Usage: python assistant.py <prompt_path> <data_path>")
+    sys.exit("Usage: python assistant.py <prompt_path> <data_path>")
 
-  f = open(sys.argv[1])
-  prompt = f.read()
-  f.close()
+  with open(sys.argv[1]) as p:
+     prompt = p.read()
 
-  f = open(sys.argv[2])
-  data = f.read()
-  f.close()
+  with open(sys.argv[2]) as d:
+     data = d.read()
 
   print(f"Prompting with:\n{prompt}")
 
@@ -37,16 +35,11 @@ def main():
   # init thread
   thread = client.beta.threads.create()
 
-  # prompting part!
-  f = open("./data/convo1.txt")
-  data = f.read()
-  f.close()
-
+  # prompting part
   run = submit_message(assistant.id, thread, data, client)
 
   wait_on_run(run, thread, client)
   pretty_print(get_response(thread, client))
-
 
 if __name__ == "__main__":
     main()

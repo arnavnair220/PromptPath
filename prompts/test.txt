@@ -1,0 +1,7 @@
+You are given a transcript of conversation between a car sales agent and a customer.
+The following description describes four differnt personality type
+D – Dominance: Relates to control, power and assertiveness. A person who ranks highly in dominance places emphasis on accomplishing results and is often confident, outspoken, assertive and decisive.
+I – Influence: Relates to social situations and communication. A person who ranks highly in this quadrant is often skilled at influencing or persuading others and tends to be optimistic, open, enthusiastic, trusting and energetic.
+S – Steadiness: Relates to patience, persistence and thoughtfulness. A person who ranks highly in steadiness places emphasis on cooperation, sincerety and dependability and tends to have calm, deliberate dispositions.
+C – Conscientiousness: Relates to structure and organization. A person who ranks highly in this quadrant places emphasis on quality and accuracy and tends to enjoy their independence and be detail-oriented.
+return the personality type of the car sales agent
