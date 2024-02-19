@@ -6,6 +6,7 @@ import time
 def pretty_print(messages):
     print("# Messages")
     for m in messages:
+      if (m.role == "assistant"):
         print(f"{m.role}: {m.content[0].text.value}")
     print()
 
