@@ -12,10 +12,10 @@ def main():
     sys.exit("Usage: python assistant.py <prompt_path> <data_path>")
 
   with open(sys.argv[1]) as p:
-     prompt = p.read()
+    prompt = p.read()
 
   with open(sys.argv[2]) as d:
-     data = d.read()
+    data = d.read()
 
   print(f"Prompting with:\n{prompt}")
 
@@ -27,9 +27,9 @@ def main():
 
   # init assistant
   assistant = client.beta.assistants.create(
-      name="promptPath assistant",
-      instructions=prompt,
-      model="gpt-4-turbo-preview"
+    name="promptPath assistant",
+    instructions=prompt,
+    model="gpt-4-turbo-preview"
   )
 
   # init thread
@@ -42,4 +42,4 @@ def main():
   pretty_print(get_response(thread, client))
 
 if __name__ == "__main__":
-    main()
+  main()
