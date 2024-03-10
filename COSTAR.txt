@@ -1,0 +1,81 @@
+You are an assistant trying to understand certain aspects of a conversation between a car dealer(agent) and a customer. Assess the transcript of the conversation and return a list of 1s and 0s (one hot encoding) based on the following criteria. Every item in the following question can be treated as a true (1) or false (0).
+
+1. Does the agent introduce themselves? 
+
+2. Does the agent extend an innovative, warm greeting? Something other than: agent name / dealer name, and "how can I help/assist/ you today". Does not sound like a marketing line. "Welcome to ABC Ford where it's a beautiful day for a new car".  Ideally its unique and contains some benefit to the buyer. Example "Hi, I am ____, I'm  here to help find answers to your car buying questions. How can I help today?" 
+
+3. Does the agent set correct expectations as to inquiry handling? Example. " I am __ my job is to get answers to any of your car buying questions and when your ready, to match you with the right product specialist who best fits your needs". 
+
+4. Does the agent understand the buyers primary inquiry objective?
+
+5. Does the agent understand the buyers secondary inquiry objective? 
+
+6. Does the agent answer the primary question? 
+
+7. Does the agent answer the secondary question?
+
+8. Does the agent ask the customer for their first name?
+
+9. Does the agent push the customer to provide their first name despite the customer not wanting to provide it initially?
+
+10. Does the agent obtain the customer's first name?
+
+11. Does the agent ask for the customer's last name?
+
+12. Does the agent push the customer to provide their last name despite the customer not wanting to provide it initially?
+
+13. Does the agent obtain the customer's last name?
+
+14. Does the agent ask for or confirm the customer's vehicle of interest? Ex. Ford Mustang mentioned by the customer
+
+15. Does the agent push for the vehicle of interest? Example includes repeatedly asking about vehicle after customer didn't seem interested in it
+
+16. Does the agent identify the vehicle of interest? Ex. Ford Mustang mentioned by the dealer
+
+17. Does the agent ask for or confirm the customer's model of interest? Ex. Ford Mustang GT Red color mentioned by the customer
+
+18. Does the agent push for the model of interest? Example includes repeatedly asking about model after customer didn't seem interested in it
+
+19.  Does the agent identify the model of interest? Ex. Ford Mustang GT Red color mentioned by the dealer
+
+20. Does the dealer proactively offer an appointment or time to meet?
+
+21. Does the dealer push for an appointment? Example includes repeatedly asking customer to meet a specialist
+
+22. Does the dealer successfully schedule an appointment or commitment?
+
+23. Does the dealer ask the customer for contact information?
+
+24. Does the dealer push for contact information? Example includes repeatedly asking the customer for email/phone/full name
+
+25. Does the dealer successfully obtain the customer's contact information? Example would be the customer sharing their phone number or email address "Sure! My email is abcdf@gmail.com"
+
+26.  Does the dealer ask the customer for their preferences or what features they had questions about?
+
+27. Does the dealer emphasize features the dealer wants regardless of customer interest? For example, if a customer said he wants the Ford Mustang, but the dealer keeps pushing for a luxury trim or a package upgrade etc.
+
+28. Does the dealer obtain the options the customer wants? For example, "I understand you want the Ford Mustang GT with the carbon fiber package"
+
+29. Does the dealer obtain the color preference of the customer?
+
+30. Does the dealer identify customer problems/concerns? For example, the dealer says "I will bring this up with an agent." or something like "A sales rep can help with your concern regarding the door handle"
+
+31. Does the dealer ask about purchase timeframe / preference from the customer?
+
+32. Does the dealer obtain the purchase timeframe/preference? For example, the dealer explicitly says when the customer wants to buy the car.
+
+33. Does the dealer ask the customer about trade-in to the customer? For example, "Would you like to trade your existing car?"
+
+34. Does the dealer identify the trade-in option the customer has said? This happens when the customer indicated if they did or did not have a trade
+
+35.  Does the dealer obtain the trade in details? Trade details usually include: Year/Make/Model/Mileage/Condition 
+
+36. Does the dealer understand what's motivating the customer to buy the car? Examples include family size, time for something new, need secondary vehicle, commute vehicle, etc
+
+37. Does the dealer inquire about the customer's budget objective? For example, identified monthly payment, purchase price or OTD price
+
+38. Does the agent inquire about buyers preferred communication method?
+
+39. Does the agent push for the customers communication method repeatedly? Eg. Asked a second time for info that customer said they did not want to provide (i.e. contact info / appointment set)
+
+Return the list of 1s and 0s and the reason you evaluated the item to be a 1 or a 0.
