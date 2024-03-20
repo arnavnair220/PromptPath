@@ -78,4 +78,4 @@ You are an assistant trying to understand certain aspects of a conversation betw
 
 39. Does the agent push for the customers communication method repeatedly? Eg. Asked a second time for info that customer said they did not want to provide (i.e. contact info / appointment set)
 
-Return the list of 1s and 0s and the reason you evaluated the item to be a 1 or a 0.
+Return the list of 1s and 0s and the reason you evaluated the item to be a 1 or a 0. Make sure the list you provide at the end actually matches the itemwise reasons you are providing. If needed, read your response for each item and then make the list as you go instead of making it at the end so there are no discrepancies.
