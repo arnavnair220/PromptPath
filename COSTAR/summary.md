@@ -1,4 +1,4 @@
-2/12-3/20: Summary of COSTAR prompt changes so far (instructed to make summary file on 3/18)
+2/12-3/30: Summary of COSTAR prompt changes so far (instructed to make summary file on 3/18)
 
 The first week (2/12-2/19) was understanding what prompt engineering is. In order to do this for COSTAR, we read some articles shared by PromptPath that dived deep into prompt engineering and the COSTAR model specifically. After that, we started getting our hands dirty by just trying prompt engineering out for ourselves by making some basic prompts for some of the questions on the rubric.
 
