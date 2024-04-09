@@ -78,4 +78,61 @@ You are an assistant trying to understand certain aspects of a conversation betw
 
 39. Does the agent push for the customers communication method repeatedly? Eg. Asked a second time for info that customer said they did not want to provide (i.e. contact info / appointment set)
 
-Return the list of 1s and 0s and the reason you evaluated the item to be a 1 or a 0. Make sure the list you provide at the end actually matches the itemwise reasons you are providing. If needed, read your response for each item and then make the list as you go instead of making it at the end so there are no discrepancies.
+40.  Does the agent reflect the shopper's tone? Refer to the DISC attributes:  
+
+Dominance (D):
+Assertive and decisive
+Results-oriented and competitive
+Enjoys challenges and taking control
+May be seen as demanding or impatient
+
+Influence (I):
+Sociable and outgoing
+Optimistic and enthusiastic
+Persuasive and good at networking
+May struggle with attention to detail
+
+Steadiness (S):
+Supportive and patient
+Reliable and team-oriented
+Calm under pressure
+May resist change and be overly cautious
+
+Conscientiousness (C):
+Analytical and detail-oriented
+Organized and systematic
+Focused on quality and accuracy
+May be seen as overly critical or reserved
+
+41.  Does the agent reflect brand voice or elements?  Refer to these brand attributes: 
+Brand	Descriptor 1	Descriptor 2	Descriptor 3			Brand	Descriptor 1	Descriptor 2	Descriptor 3
+Toyota	Reliable	Efficient	Durable			Toyota	Innovative	Eco-friendly	Quality-driven
+Volkswagen	Practical	Innovative	Sturdy			Volkswagen	Innovative	Reliable	Fun-to-drive
+Ford	Rugged	American	Versatile			Ford	Tough	Smart	American heritage
+Honda	Dependable	Economical	Safe			Honda	Reliable	Efficient	High-quality
+Chevrolet	Performance-oriented	American	Versatile			Chevrolet	Performance	Durable	American Icon
+Mercedes-Benz	Luxurious	Prestigious	Innovative			Mercedes-Benz	Luxury	Innovative	Performance
+BMW	Performance	Sporty	Luxury			BMW	Dynamic	Premium	Innovative
+Audi	Technologically advanced	Luxury	Well-crafted			Audi	Progressive	Sporty	Innovative
+Hyundai	Affordable	Reliable	Feature-rich			Hyundai	Smart technology	Value	Stylish
+Nissan	Innovative	Value-for-money	Comfortable			Nissan	Innovation	Excitement	Sustainability
+Porsche	High-performance	Luxurious	Sporty			Porsche	Performance	Exclusive	Innovative
+Tesla	Innovative	Electric	High-tech			Tesla	Sustainable	Innovative	Electric
+Lexus	Luxurious	Reliable	Quiet			Lexus	Luxury	Craftsmanship	Innovation
+Kia	Affordable	Stylish	Warranty			Kia	Youthful	Innovative	Value
+Subaru	Rugged	Safe	All-wheel drive			Subaru	Adventure	Safety	Reliable
+Volvo	Safe	Luxurious	Eco-friendly			Volvo	Safety	Sustainable	Luxury
+Fiat	Compact	Stylish	Fuel-efficient			Fiat	Fun	Italian design	Compact efficiency
+Jeep	Off-road	Rugged	Iconic			Jeep	Adventure	Freedom	Off-road capability
+Land Rover	Luxurious	Off-road capable	Rugged			Land Rover	Adventure	Luxury	All-terrain
+Ferrari	Exotic	High-performance	Luxurious			Ferrari	Performance	Italian heritage	Exclusive
+
+42. Does the agent add value? For example,  suggests relevant additional information, like available incentives, special offers etc. 	Agent offers something relevant to the shoppers objectives and of value that was not asked for by the shopper. 
+
+43.  Does the agent summarize prospects objectives and confirms understanding? This includes reflecting customer needs + Active Listening - does not interrupt
+
+44. Does the agent ignore Shopper Intent / Priority? For example, the agent pushes for other cars instead of the one the shopper wants or ignores budget or communication preferences etc.
+
+45.  Does the agent refuse to provide information? For exxample, outright says no, I cannot provide this information at this time.
+
+Return the scored results of 1s and 0s in order, along with the reason you evaluated it that way for the 45 questions you evaluated. At the end, also return just the list and make sure it is exactly the same as the list you made while evaluating the reasons. THIS IS VERY IMPORTANT and I want both the itemwise reasons and the final list to be returned and they should match.
