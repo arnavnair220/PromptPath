@@ -17,7 +17,7 @@ def main():
   with open(sys.argv[2]) as d:
     data = d.read()
 
-  print(f"Prompting with:\n{prompt}")
+  # print(f"Prompting with:\n{prompt}")
 
   load_dotenv()
 
@@ -40,6 +40,7 @@ def main():
 
   wait_on_run(run, thread, client)
   pretty_print(get_response(thread, client))
+  client.beta.assistants.delete(assistant.id)
 
 if __name__ == "__main__":
   main()

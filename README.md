@@ -12,5 +12,5 @@ OPENAI_API_KEY=<your key>
 
 # run
 ```
-python src/assistant.py prompts/name.txt data/convo1.txt
+python src/assistant.py prompts/name.txt data/chats/convo1.txt
 ```

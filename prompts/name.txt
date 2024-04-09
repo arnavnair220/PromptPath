@@ -1,2 +1,2 @@
-You are given a transcript of conversation between a car dealer and a customer.
+You are given a transcript of conversation between a car sales agent and a customer.
 Return true if the car dealer succesfully obtained the name of the customer, false if not
