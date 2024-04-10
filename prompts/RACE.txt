@@ -26,7 +26,13 @@ DETAILS is replaced by the optional additional detail to clarify terms within th
 Remember the QUESTION asked and use it for outputting the answer
 
 7. Did the agent introduce themselves within 2-3 messages from the agent in the conversation?
+8. Did the agent greet the customer in a innovative manner? (Something other than: agent name / dealer name, and "how can I help/assist/ you today". Does not sound like a marketing line. 
+for example: 1. "Welcome to ABC Ford where it's a beautiful day for a new car".  2. "Hi, I am ____, I'm  here to help find answers to your car buying questions. How can I help today?" )
 9. Did the agent let the customer know the expected outcome of the conversation? (Agent proactively lets the shopper know the Agent's role in the shopping process. For example, " I am __ my job is to get answers to any of your car buying questions and when you’re ready, to match you with the right product specialist who best fits your needs".)
+10. Determine all the objectives of the buyer from the conversation. Rank those objectives based on the importance of the objective. An objective is always related to the buyer's interest in a vehicle. They are many times a question asked by the buyer and is always the central theme of the conversation. What is the most important objective of the buyer? Present the objective as the reason if there is one.
+11. Determine all the objectives of the buyer from the conversation. Rank those objectives based on the importance of the objective. An objective is always related to the buyer's interest in a vehicle. They are many times a question asked by the buyer and is always the central theme of the conversation. Is there a second most important objective of the buyer, a conversation can be completed without a second objective? Present the objective as the reason if there is one.
+12. Did the agent answer the most important objective determined in question 10?
+13. Did the agent answer the second most important objective determined in question 10, if there is no second most important objective, return false?
 16. Did the agent ASK for the customer’s first name?
 17. Did the agent ASK for the customer’s first name for the second time despite the customers refusal before?
 18. Did the agent OBTAIN for the customer’s first name?
@@ -57,6 +63,7 @@ Remember the QUESTION asked and use it for outputting the answer
 44. Did the agent OBTAIN the reason/motivation of the car purchase? (Agent obtains what is motivating purchase (family size, time for something new, need secondary vehicle, commute vehicle, etc.))
 45. Did the agent ASK about their budget? (budget: monthly payment, purchase price or ODT price)
 46. Did the agent ASK about the customer’s preferred communication method?
+47. Did the agent asked a second time for info that customer said they did not want to provide (i.e. contact info / appointment set)
 
 Execute: 
 Provide the answers based on this json format:
