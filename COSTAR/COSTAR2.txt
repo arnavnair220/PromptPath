@@ -1,30 +1,30 @@
 You are an assistant trying to understand certain aspects of a conversation between a car dealer(agent) and a customer. Assess the transcript of the conversation and return a list of 1s and 0s (one hot encoding) based on the following criteria. Every item in the following question can be treated as a true (1) or false (0).
 
-1. Does the agent introduce themselves? Eg. "Hi! Welcome to Chevrolet. My name is Ann M."
+1. Does the agent introduce themselves? 
 
 2. Does the agent extend an innovative, warm greeting? Something other than: agent name / dealer name, and "how can I help/assist/ you today". Does not sound like a marketing line. "Welcome to ABC Ford where it's a beautiful day for a new car".  Ideally its unique and contains some benefit to the buyer. Example "Hi, I am ____, I'm  here to help find answers to your car buying questions. How can I help today?" 
 
 3. Does the agent set correct expectations as to inquiry handling? Example. " I am __ my job is to get answers to any of your car buying questions and when your ready, to match you with the right product specialist who best fits your needs". 
 
-4. Does the agent understand the buyers primary inquiry objective? Eg. "I understand you are looking to obtain more information about the Chevrolet Camaro GT"
+4. Does the agent understand the buyers primary inquiry objective?
 
-5. Does the agent understand the buyers secondary inquiry objective?  Eg. "I understand you are ALSO looking at understanding the different options available to you" Note for you: a secondary inquiry objective is only possible after a primary inquiry is obtained/answered
+5. Does the agent understand the buyers secondary inquiry objective? 
 
-6. Does the agent answer the primary question?  Eg. "The GT is available in these colors for a price of _$30000. Does this answer your question?" Note for you: Something similar to those lines works as an answer
+6. Does the agent answer the primary question? 
 
-7. Does the agent answer the secondary question? Note for you: Similar to previous question, just for the secondary objective
+7. Does the agent answer the secondary question?
 
-8. Does the agent ask the customer for their first name? Eg. "And can I get your name please?"
+8. Does the agent ask the customer for their first name?
 
-9. Does the agent push the customer to provide their first name despite the customer not wanting to provide it initially? Eg. asking for it a second time
+9. Does the agent push the customer to provide their first name despite the customer not wanting to provide it initially?
 
-10. Does the agent obtain the customer's first name? Eg. "Sure! My name is KJ"
+10. Does the agent obtain the customer's first name?
 
-11. Does the agent ask for the customer's last name? Eg. "And can I get your name please?"
+11. Does the agent ask for the customer's last name?
 
-12. Does the agent push the customer to provide their last name despite the customer not wanting to provide it initially? Eg. asking for it a second time
+12. Does the agent push the customer to provide their last name despite the customer not wanting to provide it initially?
 
-13. Does the agent obtain the customer's last name? Eg. "Sure! My name is Arnav Nair"
+13. Does the agent obtain the customer's last name?
 
 14. Does the agent ask for or confirm the customer's vehicle of interest? Ex. Ford Mustang mentioned by the customer
 
@@ -38,25 +38,25 @@ You are an assistant trying to understand certain aspects of a conversation betw
 
 19.  Does the agent identify the model of interest? Ex. Ford Mustang GT Red color mentioned by the dealer
 
-20. Does the dealer proactively offer an appointment or time to meet? Eg. "I can set up a meeting with a specialist." or "Does Thursday at 5pm work for an appointment?"
+20. Does the dealer proactively offer an appointment or time to meet?
 
 21. Does the dealer push for an appointment? Example includes repeatedly asking customer to meet a specialist
 
-22. Does the dealer successfully schedule an appointment or commitment? Eg. "Your appointment is confirmed for Thursday at 5PM with Arnav. "
+22. Does the dealer successfully schedule an appointment or commitment?
 
-23. Does the dealer ask the customer for contact information? Eg. "Can I have your email or phone number so a specialist can contact you?"
+23. Does the dealer ask the customer for contact information?
 
 24. Does the dealer push for contact information? Example includes repeatedly asking the customer for email/phone/full name
 
 25. Does the dealer successfully obtain the customer's contact information? Example would be the customer sharing their phone number or email address "Sure! My email is abcdf@gmail.com"
 
-26.  Does the dealer ask the customer for their preferences or what features they had questions about? Eg. "What features of the car do you specifically have questions about?" or "You mentioned the extended trim. Would you like to know more about the extended trim?"
+26.  Does the dealer ask the customer for their preferences or what features they had questions about?
 
 27. Does the dealer emphasize features the dealer wants regardless of customer interest? For example, if a customer said he wants the Ford Mustang, but the dealer keeps pushing for a luxury trim or a package upgrade etc.
 
 28. Does the dealer obtain the options the customer wants? For example, "I understand you want the Ford Mustang GT with the carbon fiber package"
 
-29. Does the dealer obtain the color preference of the customer? Eg. "I am looking for the availability of red mustangs"
+29. Does the dealer obtain the color preference of the customer?
 
 30. Does the dealer identify customer problems/concerns? For example, the dealer says "I will bring this up with an agent." or something like "A sales rep can help with your concern regarding the door handle"
 
@@ -74,7 +74,7 @@ You are an assistant trying to understand certain aspects of a conversation betw
 
 37. Does the dealer inquire about the customer's budget objective? For example, identified monthly payment, purchase price or OTD price
 
-38. Does the agent inquire about buyers preferred communication method? Eg. "Does email or phone work better for you?"
+38. Does the agent inquire about buyers preferred communication method?
 
 39. Does the agent push for the customers communication method repeatedly? Eg. Asked a second time for info that customer said they did not want to provide (i.e. contact info / appointment set)
 
@@ -135,4 +135,5 @@ Ferrari	Exotic	High-performance	Luxurious			Ferrari	Performance	Italian heritage
 
 45.  Does the agent refuse to provide information? For exxample, outright says no, I cannot provide this information at this time.
 
-Return the scored results of 1s and 0s in order, along with the reason you evaluated it that way for the 45 questions you evaluated. At the end, also return just the list and make sure it is exactly the same as the list you made while evaluating the reasons. THIS IS VERY IMPORTANT and I want both the itemwise reasons and the final list to be returned and they should match.
+ONLY return a list of 1s and 0s of length 45
+Example response: [1,0,0,1]
