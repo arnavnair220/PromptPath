@@ -1,3 +1,4 @@
+#automatedGrading.py
 automatedGrading.py and automatedAssitantFeeder.py work in conjunction in order to validate OpenAI assistant efficacy.
 Run the script by inputting "python .\automatedGrading.py" in the terminal. Requires "UW Chat Transcripts.xlsx" and "Manual Real Chat Grading [Confidential].xlsx"
 Outputs a visualization with each point from the grading rubric and a corresponding score
