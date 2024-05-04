@@ -5,9 +5,11 @@ Run the script by inputting "python .\automatedGrading.py" in the terminal. Requ
 Outputs a visualization with each point from the grading rubric and a corresponding score
 The assistant called on can be changed by changing the assistant_id
 Requires OpenAI secret key
+If I were to continue working on this, I would add the functionality for just testing one row from the rubric to save time of grading
 
 ## CustomerDealerSimulator.py
 CustomerDealerSimulator.py simulates a chat of user specified length between PromptPath's dealer assistant and a custom made customer assistant.
 Run the script by inputting "python .\CustomerDealerSimulator.py" in the terminal.
 The assistant called on can be changed by changing the assistant_id.
 Requires OpenAI secret key
+If I were to continue working on this, I would add a UI to make the program more appealing, intuitive, and easier to use
