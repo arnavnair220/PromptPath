@@ -1,3 +1,5 @@
+Repo Link: https://github.com/arnavnair220/PromptPath
+
 # Python Scripts
 ## automatedGrading.py
 automatedGrading.py and automatedAssitantFeeder.py work in conjunction in order to validate OpenAI assistant efficacy.
